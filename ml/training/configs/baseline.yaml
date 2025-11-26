@@ -1,0 +1,23 @@
+experiment_name: "festsafe-forecast-baseline"
+mlflow_uri: "http://localhost:5000"
+
+sequence_length: 24  # hours
+forecast_horizon: 24  # hours
+
+tabular:
+  model_type: "gradient_boosting"
+  hyperparameters:
+    n_estimators: 100
+    max_depth: 5
+    learning_rate: 0.1
+    random_state: 42
+
+neural_network:
+  hidden_size: 64
+  num_layers: 2
+  dropout: 0.2
+  learning_rate: 0.001
+  batch_size: 32
+  num_epochs: 50
+
+

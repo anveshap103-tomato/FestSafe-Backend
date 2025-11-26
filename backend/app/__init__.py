@@ -1,0 +1,3 @@
+"""FestSafe AI Backend Application."""
+
+
